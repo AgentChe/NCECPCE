@@ -225,8 +225,8 @@ private extension ProfileManager {
     }
     
     func loadProfile() -> Single<Profile?> {
-        let request = GetProfileRequest(domain: GlobalDefinitions.nclexDomainUrl,
-                                        apiKey: GlobalDefinitions.nclexApiKey,
+        let request = GetProfileRequest(domain: GlobalDefinitions.nceDomainUrl,
+                                        apiKey: GlobalDefinitions.nceApiKey,
                                         userToken: sessionManager.internalId)
         
         return defaultRequestWrapper
